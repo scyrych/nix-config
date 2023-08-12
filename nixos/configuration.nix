@@ -6,14 +6,15 @@
   imports = [
     # If you want to use modules from other flakes (such as nixos-hardware):
     inputs.hardware.nixosModules.common-cpu-amd
-    inputs.hardware.nixosModules.common-ssd
+    inputs.hardware.nixosModules.common-pc-ssd
     inputs.hardware.nixosModules.common-gpu-nvidia
 
     # You can also split up your configuration and import pieces of it here:
-    # ./users.nix
+    # ./user.nix
 
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
+    ./user-hardware-configuration.nix
   ];
 
   nixpkgs = {
@@ -79,8 +80,10 @@
     LC_TIME = "pl_PL.UTF-8";
   };
 
-  # Configure keymap in X11
   services.xserver = {
+    enable = true;
+    displayManager.gdm.enable = true;
+    desktopManager.gnome.enable = true;
     layout = "pl";
     xkbVariant = "";
   };
@@ -106,6 +109,7 @@
     wget
     git
   ];
+
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   system.stateVersion = "23.05";

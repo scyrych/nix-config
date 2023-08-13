@@ -60,6 +60,7 @@
     userName = "Sebastian Cyrych";
     userEmail = "s.cyrych@gmail.com";
   };
+  programs.htop.enable = true;
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";

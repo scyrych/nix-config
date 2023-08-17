@@ -5,7 +5,7 @@
   # You can import other home-manager modules here
   imports = [
     # If you want to use modules your own flake exports (from modules/home-manager):
-    # outputs.homeManagerModules.example
+    outputs.homeManagerModules.hyprland
 
     # If you want to use home-manager modules from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModule
@@ -51,6 +51,8 @@
   home.packages = with pkgs; [ 
     brave
     tidal-hifi
+    psensor
+    lm_sensors
   ];
 
   # Enable home-manager and git

@@ -5,7 +5,7 @@
   # You can import other NixOS modules here
   imports = [
     # If you want to use modules your own flake exports (from modules/nixos):
-    # outputs.nixosModules.example
+    outputs.nixosModules.hyprland
 
     # If you want to use modules from other flakes (such as nixos-hardware):
     inputs.hardware.nixosModules.common-cpu-amd
@@ -90,8 +90,10 @@
 
   services.xserver = {
     enable = true;
-    displayManager.gdm.enable = true;
-    desktopManager.gnome.enable = true;
+    displayManager.gdm = { 
+      enable = true;
+      wayland = true;
+    };
     layout = "pl";
     xkbVariant = "";
   };

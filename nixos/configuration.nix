@@ -99,6 +99,23 @@
   # Configure console keymap
   console.keyMap = "pl2";
 
+
+  # Enable sound with pipewire.
+  sound.enable = true;
+  security.rtkit.enable = true;
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+    jack.enable = true;
+  };
+ 
+  # Fonts
+  fonts.fonts = with pkgs; [
+    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+  ];
+
   users.users = {
     seba = {
       isNormalUser = true;
@@ -113,6 +130,8 @@
     vim
     wget
     git
+    nerdfonts
+    gnome.gnome-tweaks
   ];
 
 

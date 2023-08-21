@@ -47,6 +47,9 @@ in
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
     };
+    "org/gnome/shell/extensions/user-theme" = {
+      name = catppuccin_name;
+    };
   };
 
   qt = {

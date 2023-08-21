@@ -1,0 +1,2 @@
+# create a dev-kraken.device for this third-generation Kraken X
+ACTION=="add", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="1e71", ATTRS{idProduct}=="2007", ATTRS{serial}=="00000000001A", SYMLINK+="kraken", TAG+="systemd"

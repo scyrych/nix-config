@@ -23,7 +23,7 @@
         Type = "oneshot";
 	ExecStart = [ 
 	 "${pkgs.liquidctl}/bin/liquidctl initialize all"
-	 "${pkgs.liquidctl}/bin/liquidctl --match kraken set pump speed 30 60 34 80 40 90 50 100"
+	 "${pkgs.liquidctl}/bin/liquidctl --match kraken set pump speed 30 70 34 80 40 90 50 100"
 	 "${pkgs.liquidctl}/bin/liquidctl --match kraken set ring color spectrum-wave"
 	 "${pkgs.liquidctl}/bin/liquidctl --match kraken set logo color fixed 006400"
 	];

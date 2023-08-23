@@ -4,4 +4,5 @@
 {
   # List your module files here
   theming = import ./theming.nix;
+  gnomeExtensions = import ./gnomeExtensions.nix;
 }

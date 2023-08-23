@@ -6,6 +6,7 @@
   imports = [
     # If you want to use modules your own flake exports (from modules/home-manager):
     outputs.homeManagerModules.theming
+    outputs.homeManagerModules.gnomeExtensions
 
     # If you want to use home-manager modules from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModule
@@ -54,6 +55,7 @@
     psensor
     lm_sensors
     liquidctl
+    vimPlugins.nvchad
   ];
 
   # Enable home-manager and git

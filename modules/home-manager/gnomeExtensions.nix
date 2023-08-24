@@ -6,10 +6,6 @@
       clock-show-weekday = true;
       enable-hot-corners = false;
     };
-    "org/gnome/mutter" = {
-      edge-tiling = true;
-      dynamic-workspaces = true;
-    };
     "org/gnome/shell" = {
       disable-user-extensions = false;
       enabled-extensions = [

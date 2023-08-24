@@ -7,6 +7,7 @@
     # If you want to use modules your own flake exports (from modules/home-manager):
     outputs.homeManagerModules.theming
     outputs.homeManagerModules.gnomeExtensions
+    outputs.homeManagerModules.pop-shell
 
     # If you want to use home-manager modules from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModule

@@ -56,7 +56,6 @@
     psensor
     lm_sensors
     liquidctl
-    vimPlugins.nvchad
   ];
 
   # Enable home-manager and git

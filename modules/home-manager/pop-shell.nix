@@ -22,6 +22,7 @@
     "org/gnome/shell/extensions/pop-shell" = {
       active-hint = true;
       smart-gaps = true;
+      tile-by-default = true;
       gap-outer = lib.hm.gvariant.mkUint32 4;
       gap-inner = lib.hm.gvariant.mkUint32 4;
       active-hint-border-radius = lib.hm.gvariant.mkUint32 15;

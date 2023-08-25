@@ -8,6 +8,7 @@
     outputs.homeManagerModules.theming
     outputs.homeManagerModules.gnomeExtensions
     outputs.homeManagerModules.pop-shell
+    outputs.homeManagerModules.zsh
 
     # If you want to use home-manager modules from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModule

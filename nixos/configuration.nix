@@ -116,11 +116,15 @@
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ];
 
+  # Shell
+  programs.zsh.enable = true;
+
   users.users = {
     seba = {
       isNormalUser = true;
       description = "Sebastian";
       extraGroups = [ "networkmanager" "wheel" ];
+      shell = pkgs.zsh;
     };
   };
 

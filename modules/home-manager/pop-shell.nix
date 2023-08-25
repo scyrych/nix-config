@@ -21,7 +21,7 @@
     # https://github.com/pop-os/shell/blob/master_jammy/scripts/configure.sh
     "org/gnome/shell/extensions/pop-shell" = {
       active-hint = true;
-      smart-gaps = true;
+      smart-gaps = false;
       tile-by-default = true;
       gap-outer = lib.hm.gvariant.mkUint32 4;
       gap-inner = lib.hm.gvariant.mkUint32 4;

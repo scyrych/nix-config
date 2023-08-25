@@ -23,8 +23,8 @@
       active-hint = true;
       smart-gaps = false;
       tile-by-default = true;
-      gap-outer = lib.hm.gvariant.mkUint32 4;
-      gap-inner = lib.hm.gvariant.mkUint32 4;
+      gap-outer = lib.hm.gvariant.mkUint32 3;
+      gap-inner = lib.hm.gvariant.mkUint32 3;
       active-hint-border-radius = lib.hm.gvariant.mkUint32 15;
       hint-color-rgba = "rgba(139, 213, 202, 1)";
       activate-launcher = [ "<Super>Space" ];
@@ -38,9 +38,9 @@
       # hide window: disable <super>h
       minimize = [ "<Super>comma" ];
       # switch to workspace left: disable <super>left
-      switch-to-workspace-left = [ ];
+      switch-to-workspace-left = [ "<Primary><Super>Left" "<Primary><Super>h" ];
       # switch to workspace right: disable <super>right
-      switch-to-workspace-right = [ ];
+      switch-to-workspace-right = [ "<Primary><Super>Right" "<Primary><Super>l" ];
       # maximize window: disable <super>up
       maximize = [ ];
       # restore window: disable <super>down

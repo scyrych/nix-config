@@ -6,9 +6,10 @@
   imports = [
     # If you want to use modules your own flake exports (from modules/home-manager):
     outputs.homeManagerModules.alacritty
-    outputs.homeManagerModules.theming
     outputs.homeManagerModules.gnomeExtensions
+    outputs.homeManagerModules.nvim
     outputs.homeManagerModules.pop-shell
+    outputs.homeManagerModules.theming
     outputs.homeManagerModules.zsh
 
     # If you want to use home-manager modules from other flakes (such as nix-colors):
@@ -51,7 +52,6 @@
   };
 
   # Add stuff for your user as you see fit:
-  programs.neovim.enable = true;
   home.packages = with pkgs; [ 
     brave
     tidal-hifi

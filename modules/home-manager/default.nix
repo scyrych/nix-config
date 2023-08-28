@@ -5,6 +5,7 @@
   # List your module files here
   alacritty = import ./alacritty;
   gnomeExtensions = import ./gnomeExtensions.nix;
+  nvim = import ./nvim.nix;
   pop-shell = import ./pop-shell.nix;
   theming = import ./theming.nix;
   zsh = import ./zsh;

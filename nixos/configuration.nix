@@ -127,7 +127,7 @@
       shell = pkgs.zsh;
     };
   };
-
+  
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -136,6 +136,9 @@
     git
     nerdfonts
     gnome.gnome-tweaks
+    clang
+    nodejs_18
+    xclip
   ];
 
 

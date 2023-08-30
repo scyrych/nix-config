@@ -7,5 +7,6 @@
   gnomeExtensions = import ./gnomeExtensions.nix;
   pop-shell = import ./pop-shell.nix;
   theming = import ./theming.nix;
+  vscode = import ./vscode.nix;
   zsh = import ./zsh;
 }

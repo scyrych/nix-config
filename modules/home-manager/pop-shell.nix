@@ -82,7 +82,7 @@
     "org/gnome/shell/keybindings" = {
       open-application-menu = [ ];
       # toggle message tray: disable <super>m
-      toggle-message-tray = [ "<Super>v" ];
+      toggle-message-tray = [ ];
       # show the activities overview: disable <super>s
       toggle-overview = [ ];
     };
@@ -105,12 +105,18 @@
       # launch terminal
       custom-keybindings = [
         "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
+        "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/"
       ];
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
       binding = "<Super>t";
       command = "alacritty";
       name = "Launch terminal";
+    };
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
+      binding = "<Super>v";
+      command = "code --disable-gpu-compositing";
+      name = "Launch vscode";
     };
   };
 

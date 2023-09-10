@@ -141,6 +141,10 @@
     nodejs_18
     xclip
     tree-sitter
+    cmake
+    gnumake
+    ripgrep
+    fd
   ];
 
 

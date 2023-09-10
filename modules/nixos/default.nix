@@ -4,4 +4,5 @@
 {
   # List your module files here
   liquidctl = import ./liquidctl;
+  gdm-monitors = import ./monitors;
 }
